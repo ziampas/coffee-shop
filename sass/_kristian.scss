@@ -1,0 +1,64 @@
+$footer-margin: 3em;
+$footer-padding: 2em;
+$darkbrown: #391C01;
+$lightbrown: #DAAA7A;
+$white: #fff;
+$title-size: 1.75rem;
+$p-title-size: 2em;  /* P står för Product... */
+$p-title-font: 'Permanent Marker', sans-serif;
+
+
+
+.footer {
+  background-color: $darkbrown;
+  color: $lightbrown;
+  padding: $footer-padding;
+  margin-top: $footer-margin;
+}
+
+.footer a {
+  color: $lightbrown;
+}
+
+.footer .title {
+  color: $white;
+  font-size: $title-size;
+}
+
+/* Här har jag framförallt förenklat med färger, då footern ska innehålla ett
+färgschema med tre färger så gär Sass det enklare att bestämma färg genom att
+använda enkla variabler jag själv satt som ex. lightbrown istället för
+hexadecimal kod */
+
+/* SASS-kod för våra produkt-kort */
+
+.card-content {
+text-align: $_center;
+}
+
+.card-content img {
+margin-bottom: 10px;
+}
+
+.card-content img:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card-content .button {
+ background-color: $lightbrown;
+  margin-top: 10px;
+}
+
+.card-content i {
+  margin-top: 10px;
+}
+
+.card-content .title {
+  font-family: $p-title-font;
+  font-size: $p-title-size;
+}
+
+/* Här har jag bland annat gett Bulmas title-element en fast storlek, vilket underlättar
+då jag tidigare fick ge en storlek till titlen i html-koden, genom att ex. ange
+'has-color-white'*/

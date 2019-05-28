@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import '../bulma-0.7.1/bulma.sass';
+@import '_globalt-variables';
+@import 'jan';
+@import 'kristian';
+@import 'simon';
+
+
+/* PRODUKT KAMPANJ PRODUCTS.HTML START*/
+#sales-section-home .sales{
+  color: red;
+  font-size: 38px;
+  font-weight: $_bold;
+}
+#sales-section-home .price{
+  color: black;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#sales-section-home .sales-small{
+  color: red;
+  font-size: 25px;
+  font-weight: $_bold;
+}
+#sales-section-home .price-small{
+  color: black;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+#sales-section-home .big-slaes {
+  position: relative;
+  border: 1px solid #BBB;
+  background: #EEE;
+}
+/* PRODUKT KAMPANJ PRODUCTS.HTML END*/
+
+/* 3party code from https://www.cssportal.com/css-ribbon-generator/ start*/
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#F70505 0%, #8F0808 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #8F0808;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8F0808;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #8F0808;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8F0808;
+}
+/* this code is from https://www.cssportal.com/css-ribbon-generator/ end*/
+
+
+
+
+
+/* CSS FÖR PRODUKTSIDAN //KRISTIAN  HEADER*/
+
+.product-header {
+  background-color: #F5F5F5;
+  text-align: $_center;
+  margin-top: 1em;
+}
+
+.product-menue {
+  margin-top: 1em;
+}
+
+.product-menue ul {
+justify-content: $_center;
+}

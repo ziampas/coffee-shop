@@ -1,0 +1,55 @@
+/* COMBAK: content Simon */
+.artikel-hem {
+  text-align: center;
+}
+
+/* ABOUT */
+#video {
+  display: flex;
+}
+iframe {
+  width: 100%;
+  height: 315px;
+  margin: auto;
+}
+
+.donations {
+  background-image: url(../img/beans.jpg);
+  box-shadow: 35px 0px rgba(190, 177, 177, 0.8);
+  width: 60%;
+}
+
+#about_page .artiklar {
+  margin-top: 0;
+  margin-bottom: -40px;
+}
+
+#about_page #school {
+  border: solid 2px rgba(77, 9, 9, 0.2);
+  padding: 5px;
+  text-align: center;
+}
+
+#about_page .subtitle .current {
+  font-size: 1em;
+}
+
+#about_page .tile .titlar {
+  text-align: center;
+}
+
+#about_page .tile .motto {
+  font-size: 0.8em;
+}
+
+#about_page .coloart {
+  margin-bottom: -100px;
+}
+
+#about_page .image .pic {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+
+/* ABOUT END */

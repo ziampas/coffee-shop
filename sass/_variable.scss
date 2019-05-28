@@ -1,0 +1,18 @@
+/* Header background*/
+@mixin cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+$header_bg_image: url(../img/bg.jpg) no-repeat center center;
+$header_bg_image_height: 500px;
+
+/* div conteiner headline title*/
+$page_title_bg_color:   #391C01;
+$page_title_text_color:   white;
+$page_title_text_size:   24px;
+$page_title_text_border:   10px solid #C09261;
+$page_title_text_padding:   7px;
+$page_title_text_margin:   10px 0px 10px 0px;
+$page_title_text_weight: bold;

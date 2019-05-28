@@ -1,0 +1,26 @@
+/* GLOBALT VARIABLES values*/
+$_bg_color_dark_brown:   #391C01;
+$_bg_color_light_orange:   #C09261;
+$_bg_color_light_grey:   #ccc;
+$_bold: bold;
+$_center: center;
+$_color_white:   white;
+$_text_size_24px: 24px;
+$_zero: 0;
+$_float_R: right;
+$_float_L: left;
+$_opacity_half: .5;
+$_100_percent: 100%;
+$_absolute: absolute;
+$_none:none;
+$_auto: auto;
+$_inline: inline;
+$_block: block;
+$_flex: flex;
+
+/* GLOBALT MIXIN VARIABLES*/
+@mixin zero {
+    // zero both margin and padding
+    margin: $_zero;
+    padding: $_zero;
+}

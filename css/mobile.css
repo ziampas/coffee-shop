@@ -1,0 +1,30 @@
+/* COMBAK: mobile */
+@media only screen and (max-width: 712px) {
+   #menu-bar  .logo-column {
+       position:absolute;
+       display: inline;
+       width: 100%;
+       top: -130px;
+    }
+    #menu-bar .list-column i{
+      display: none;
+    }
+    #menu-bar .list-column .column {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    #menu-bar .list-column i{
+      display: none;
+    }
+    #menu-bar .list-column a{
+      font-family: 'Comfortaa', sans-serif;
+      text-decoration: none;
+      color: white;
+      font-size: .8rem;
+      text-align: left;
+      font-weight: bold;
+    }
+
+}

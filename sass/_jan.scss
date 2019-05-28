@@ -1,0 +1,215 @@
+
+/* Header background*/
+#header-section {
+  @mixin cover {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  /* local variables*/
+  $header_bg_image: url(../img/bg.jpg) no-repeat center center;
+  $header_bg_image_height: 500px;
+background: $header_bg_image;
+height: $header_bg_image_height;
+@include cover;
+}
+
+.content-headline{
+  /* local variables*/
+  $page_title_text_border:   10px solid #C09261;
+  $page_title_text_padding:   7px;
+  $page_title_text_margin:   10px 0px 10px 0px;
+background-color: $_bg_color_dark_brown;
+border-left: $page_title_text_border;
+padding: $page_title_text_padding;
+color: $_color_white;
+font-size: $_text_size_24px;
+margin: $page_title_text_margin;
+font-weight: $_bold;
+}
+
+
+#header-section .section{
+    @include zero;
+  }
+#header-section .columns{
+    @include zero;
+}
+#produkt-info .section{
+    @include zero;
+}
+#main-contact .section{
+    @include zero;
+}
+#main-homepage .section{
+    @include zero;
+}
+
+
+
+  #header-section .columns.is-centered {
+    justify-content: $_center;
+}
+
+  /* COMBAK: header Jan */
+  #header-section .hero {
+    background-color:$_bg_color_dark_brown;
+    height: $_auto;
+    padding: 1px;
+    text-align:$_center;
+    line-height: $_zero;
+}
+#header-section .hero .columns {
+  z-index: 5;
+}
+#header-section .hero a {
+ float: $_float_R;
+ padding: 10px 10px 5px 5px;
+}
+
+#header-section .button.is-info{
+ background-color: $_bg_color_light_orange;
+ border-radius: $_zero;
+}
+#header-section .input {
+opacity: $_opacity_half;
+border-radius: $_zero;
+}
+#header-section .field.has-addons{
+   padding: 5px;
+}
+#header-section i{
+  color: $_color_white;
+}
+#menu-bar .container.is-fullhd {
+  width: $_100_percent;
+  background-color: $_bg_color_dark_brown;
+  height: 59.5%;
+  margin-top: 100px;
+  padding: 5px;
+}
+#header-section .main-menu{
+border-top: 2px dashed gold;
+border-bottom: 2px dashed gold;
+height: 50px;
+}
+.hover-effect:before{
+	content:"\f111";
+}
+
+.hover-effect:hover:before{
+	content:"\f192";
+}
+#header-section .main-menu .columns {
+  position: $_absolute;
+  width: $_100_percent;
+  text-align: $_center;
+}
+/* menu listan */
+.list-column .column{
+  z-index: 2;
+}
+.list-column a{
+  font-family: 'Comfortaa', sans-serif;
+  text-decoration: $_none;
+  color: $_color_white;
+  font-size: 1rem;
+}
+
+/* rutan bakom logo */
+.list-column .ct{
+  z-index: -1;
+}
+/* logo */
+#menu-bar .logo-column  {
+position: $_absolute;
+display: $_inline;
+width: $_100_percent;
+bottom: 220%;
+z-index: 1;
+}
+@mixin time  {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+.logo-column .animated  {
+  @include time;
+}
+/* COMBAK: SLider big image */
+#slider .slider-title {
+width: $_100_percent;
+height: 150px;
+margin-top: 150px;
+padding-top: 13px;
+}
+#slider .slider-title p {
+display: $_block;
+color: $_color_white;
+text-align: $_center;
+color: #fcfcfc;
+text-shadow: 3px 3px #000000;
+margin-top: -30px;
+font-family: 'Permanent Marker';
+}
+#slider .slider-title span {
+position: $_absolute;
+width: $_100_percent;
+margin: $_auto;
+display: $_block;
+background-color: rgba(255, 255, 255, 0.3);
+text-align: $_center;
+font-weight: $_bold;
+bottom: $_zero;
+}
+@mixin slider {
+  -webkit-animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  animation-duration: 10s;
+}
+#slider .slider-title span .animated {
+@include slider;
+}
+#slider .slider-title span:hover  {
+  position: $_absolute;
+  bottom: 20px;
+  transform: scale(2);
+}
+
+#slider .slider-title a {
+font-size: 25px;
+color: $_color_white;
+
+}
+
+/* COMBAK: produkt-info.html page */
+
+#produkt-info .tile{
+  border: $_none;
+  border-radius: $_zero $_zero;
+}
+#produkt-info .reviews .box{
+  padding-top: 20px;
+  border-bottom: 1px dashed grey;
+  box-shadow: $_zero $_zero;
+}
+#produkt-info .reviews .add-reviews{
+  border: $_zero;
+}
+#produkt-info .columns{
+  background-color: $_bg_color_light_grey;
+}
+#produkt-info .link-p{
+  padding-top: 20px;
+}
+/* COMBAK: contact.html page */
+
+
+#main-contact iframe{
+  width: $_100_percent;
+  height: 250px;
+  border:$_zero;
+  padding: $_zero;
+}
